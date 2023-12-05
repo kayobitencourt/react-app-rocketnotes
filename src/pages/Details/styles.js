@@ -10,5 +10,18 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content"
-  ;
-`
+`;
+
+export const Links = styled.ul`
+  list-style: none;
+
+  > li {
+    margin-top: 15px;
+    color: ${({theme}) => theme.COLORS.GRAY_100};
+
+    a{
+      color: ${({theme}) => theme.COLORS.WHITE};
+    }
+  };
+
+`;
